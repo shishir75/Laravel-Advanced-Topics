@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Providers\app\Listeners;
+namespace App\Listeners;
 
 use App\Events\NewCustomerHasRegisteredEvent;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-class ConfirmCustomer1Listener
+class ConfirmCustomer2Listener
 {
     /**
      * Create the event listener.

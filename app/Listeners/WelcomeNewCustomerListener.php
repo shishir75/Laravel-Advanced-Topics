@@ -2,6 +2,7 @@
 
 namespace App\Listeners;
 
+use App\Events\NewCustomerHasRegisteredEvent;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
@@ -20,10 +21,10 @@ class WelcomeNewCustomerListener
     /**
      * Handle the event.
      *
-     * @param  object  $event
+     * @param  NewCustomerHasRegisteredEvent  $event
      * @return void
      */
-    public function handle($event)
+    public function handle(NewCustomerHasRegisteredEvent $event)
     {
         //
     }
