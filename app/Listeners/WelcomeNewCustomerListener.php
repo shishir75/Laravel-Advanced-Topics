@@ -6,8 +6,9 @@ use App\Events\NewCustomerHasRegisteredEvent;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-class WelcomeNewCustomerListener
+class WelcomeNewCustomerListener implements ShouldQueue
 {
+    use InteractsWithQueue;
     /**
      * Create the event listener.
      *
